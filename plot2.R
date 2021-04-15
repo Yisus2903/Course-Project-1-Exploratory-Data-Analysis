@@ -13,4 +13,4 @@ datetime <- strptime(paste(dateddata$Date, dateddata$Time, sep=" "), "%d/%m/%Y %
 activepower <- as.numeric(dateddata$Global_active_power)
 png("plot2.png")
 plot(datetime, activepower, type="l", xlab="", ylab="Global Active Power (kilowatts)")
-dev.off()
+
